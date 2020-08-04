@@ -6,7 +6,12 @@ export default function App() {
   return (
     <View style={styles.container}>
      <View style={styles.header}>
-       <Text style={styles.textStyle}>Hello React Native</Text>
+       <Text style={styles.textStyle}>Header</Text>
+     </View>
+     <View style={styles.body}>
+       <Text style={styles.bodyText}>Hello Welcome <Text>Span</Text> React Native </Text>
+       <Text>Hello Welcome React Native </Text>
+       <Text>Hello Welcome React Native </Text>
      </View>
     </View> 
   );
@@ -20,11 +25,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header:{
-    backgroundColor:'black',
+    backgroundColor:'pink',
     padding:20.0,
   },
   textStyle:{
-    color:'blue',
+    color:'red',
     fontWeight: 'bold',
+  },
+  body:{
+      backgroundColor:'yellow',
+      padding:20.0,
+  },
+  bodyText:{
+    color:'blue',
+    fontWeight:'bold',
   }
+
+
 });
